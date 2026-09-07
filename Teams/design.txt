@@ -1,0 +1,29 @@
+Design:
+I designed two main classes: Team and Player.
+The Team class contains teamName, coachName, numPlayers, and an ArrayList of players, since a team needs to include all its members. 
+These attributes are set to private, and public methods are provided to allow access from other parts of the program.
+On the other hand, the Player class includes the player's name, height, birthplace, team name, and an array for the player's position(s).
+In the UserInterface class, I implemented the following methods:
+1. listTeams
+2. listTeamsWithCoaches
+3. listTeamPlayers
+4. listPositionPlayersOnTeam
+5. listHeights
+6. checkSelection
+7. graphHeights
+8. listPlace
+9. playerPhoto
+I also created two ArrayLists: teamList and playerList. The program scans the "teams.txt" file, reading the team name, coach name, and number of players sequentially. 
+The player names and coach names are then added to the teamList to support the first two functionalities.
+Next, a for loop is used to scan the player details. The position and name are initially read as a single string and separated using the split method.
+The player's position(s) are further split if necessary. 
+After that, the height and birthplace are scanned. Finally, all player information is added to both the team and playerList.
+The listTeams and listTeamsWithCoaches methods are successfully implemented using for loops. listTeamPlayers utilizes nested loops, 
+while listPositionPlayersOnTeam requires three levels of nested for loops to verify the team name, check if the player belongs to that team, and confirm their position. 
+The listHeights method is implemented using a standard for loop.
+Please note that checkSelection is currently incomplete.
+For graphHeights, I designed a height chart grouped by team, using different colors for distinction.
+A for loop is used to draw each player, adjusting the x-coordinate position with each iteration.
+The listPlace method is also implemented using a for loop.
+For playerPhoto, I implemented a feature that allows users to view a player's photo and other details by searching for their name. 
+The logic for locating the photo path was implemented based on hints provided by the instructor.
