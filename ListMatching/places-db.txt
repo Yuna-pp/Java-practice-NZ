@@ -1,0 +1,36 @@
+30512 Auckland
+50528 Auckland
+58590 Dunedin
+38882 Tauranga
+62253 Dunedin
+42881 Auckland
+51705 New Plymouth
+31905 Wellington
+12619 Adelaide
+87374 Christchurch
+34592 Taupo
+59923 Palmerston North
+70565 Nelson
+47337 Whakatane
+56638 Wellington
+43820 New Plymouth
+91122 Invercargill
+34275 Timaru
+66455 Wellington
+40054 Wellington
+38426 Taupo
+88921 Taupo
+41022 Christchurch
+50002 Wellington
+68533 Picton
+49267 Nelson
+50832 Hamilton
+47299 Christchurch
+69767 Blenheim
+10471 Lower Hutt
+76619 Te Kuiti
+17338 Wellington
+26482 Auckland
+51889 Hamilton
+75592 Levin
+81312 Porirua
