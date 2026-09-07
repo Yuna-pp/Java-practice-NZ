@@ -1,0 +1,52 @@
+Report: 
+Maze Map Editor & Playable Game
+
+Project Overview & Features:
+* Create Map: Generates a grid based on user-defined rows and columns, bounded by outer walls with floor tiles inside.
+* Edit Map: Supports interactive editing via mouse clicks to place Walls, Doors, Coins, or clear tiles using the Eraser tool.
+* Save & Load: Serializes the custom map into a formatted text file (using numerical grid representations) and supports loading existing map files.
+* Play Game: Allows setting the player's starting position with a mouse click. Players use W/A/S/D keys to navigate the maze. The player cannot pass through walls or bounds, collects coins to update the score, and wins upon reaching the door.
+
+Core Concepts Used: 
+Loops, Classes, Interfaces, 2D Arrays, Event Handling (Mouse & Keyboard Listeners), and File I/O (Scanner / PrintStream).
+Self-Taught Skill: Utilized Enum for clean tile type management.
+
+Class & Architecture Design:
+* UserInterface: Manages the GUI layout, menu buttons, score display, and forwards mouse/keyboard eve
+* Class - MapGrid: Edit and modify maps, specifically handling editing logic
+* Class - MazeMap: Responsible for initial map initialization and saving map data to files.
+* Class - MapLoader: Handles reading map text files and reconstructing the 2D grid array.
+* Class - Player: Encapsulates player position, state (isSet), and player sprite rendering.
+* Interface - GameObject: Decoupling player and MapGrid, in preparation for adding other features to the map in the future
+* Enum - MapType: Defines cell types (WALL, FLOOR, DOOR, COIN, ERASER).
+
+Team Collaboration & Contributions
+Collaborator：Isaac (Rui Han) Co-designed the project idea; implemented map initialization and saving logic in MazeMap.
+
+Yunian Tao:
+* Designed the layout (UserInterface) and button actions.
+* Implemented mouse editing in MapGrid: converting mouse click coordinates to grid row/col to draw Wall, Door, Coin, or Eraser.
+* Implemented player movement via keyboard (W/A/S/D), including out-of-bounds check, wall collisions, eating coins to add score, and reaching the door.
+* Created MapLoader to read the map text file and rebuild the 2D array.
+* Applied GameObject interface to decouple Player rendering from MapGrid.
+
+Player icon image sourced from the web.
+
+
+Draft:
+Part 1: Map Creation & Initialization
+Prompt user to input map dimensions (length and width), create the MazeMap class to handle map creation and saving, and call it inside UserInterface.
+Part 2: Map Loading & Interactive Editing
+Create a MapLoader class to read map.pgm into a 2D array (grid[y][x]), render it on screen, and allow users to place the player, walls, and exit.
+Part 3: Gameplay
+Allow users to play and navigate the maze game they designed.
+
+Classes:
+Player: Player state and position
+MapGrid: Map editing logic
+MapLoader: File reading
+MazeMap: Map creation and saving
+
+Enum:
+MapType: Grid cell types
+
